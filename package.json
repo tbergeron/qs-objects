@@ -1,0 +1,26 @@
+{
+  "name": "qs-objects",
+  "version": "0.1.0",
+  "description": "Converts query strings to objects",
+  "keywords": [],
+  "author": "Tommy Bergeron <t.bergeron@gmail.com>",
+  "repository": "git://github.com/tbergeron/qs-objects.git",
+  "main": "index",
+  "homepage": "https://github.com/tbergeron/qs-objects",
+  "contributors": [
+    {
+      "name": "Tommy Bergeron"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/tbergeron/qs-objects/issues",
+    "email": "t.bergeron@gmail.com"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "licenses": [{}],
+  "scripts": {
+  }
+}
