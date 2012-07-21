@@ -1,5 +1,4 @@
-var qsObjects = require(".."),
-    http = require('http');
+var qsObjects = require("..");
 
 var querystring = 'potato%5Bsize%5D=big&potato%5Btaste%5D=good&author=mr+big';
 
