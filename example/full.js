@@ -1,7 +1,11 @@
 var qsObjects = require(".."),
     http = require('http');
 
+console.log(qsObjects);
+
 http.createServer(function(req, res) {
+    var html = '';
+
     res.writeHead(200, {'Content-Type': 'text/html'});
 
     if (req.method == 'POST') {
@@ -18,23 +22,24 @@ http.createServer(function(req, res) {
 
             var body = qsObjects(buffer);
 
-            console.log('converted to objects');
+            console.log('converted to objects:');
             console.log(body);
 
-            var html = 'Go check out your console now ;-)';
+            html = 'Go check out your console now ;-)';
         });
-        
+
     } else {
         // html form
-        var html = '<form action="/" method="post">'
-                        + '<input type="text" name="potato[size]" placeholder="Enter potato size" />'
-                        + '<input type="text" name="potato[taste]" placeholder="Enter potato taste" />'
-                        + '<input type="text" name="author" placeholder="Enter your name" />'
-                        + '<input type="submit" />'
-                        + '</form>';
+        html = '<form action="/" method="post">'
+                + '<input type="text" name="potato[size]" value="big" />'
+                + '<input type="text" name="potato[taste]" value="good" />'
+                + '<input type="text" name="author" value="mr big" />'
+                + '<input type="submit" />'
+                + '</form>';
     }
 
     // outputs html
+    console.log(html);
     res.write(html);
     res.end();
 }).listen(1337);

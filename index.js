@@ -1,4 +1,4 @@
-var qsObjects = function (queryString) {
+module.export = function (queryString) {
     var querystring = require('querystring');
     var parsedBody = querystring.parse(queryString);
 
@@ -32,5 +32,3 @@ var qsObjects = function (queryString) {
 
     return body;
 }
-
-module.export = qsObjects;
