@@ -1,8 +1,6 @@
 var qsObjects = require(".."),
     http = require('http');
 
-console.log(qsObjects);
-
 http.createServer(function(req, res) {
     var html = '';
 
@@ -39,7 +37,8 @@ http.createServer(function(req, res) {
     }
 
     // outputs html
-    console.log(html);
     res.write(html);
     res.end();
 }).listen(1337);
+
+console.log('Open your browser on http://127.0.0.1:1337');

@@ -1,4 +1,4 @@
-module.export = function (queryString) {
+module.exports = function (queryString) {
     var querystring = require('querystring');
     var parsedBody = querystring.parse(queryString);
 
