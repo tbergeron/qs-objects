@@ -21,4 +21,12 @@ Usage
     // outputs full converted objects
     console.log(body);
     
+    // {
+    //      potato: { 
+    //                  size: 'big', 
+    //                  taste: 'good' 
+    //              }, 
+    //      author: 'mr big' 
+    //  }
+    
     // so now you can do body.potato.taste
