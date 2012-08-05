@@ -1,7 +1,12 @@
 module.exports = function (queryString) {
     var querystring = require('querystring');
-    var parsedBody = querystring.parse(queryString);
 
+    if (typeof queryString === 'object') {
+        var parsedBody = queryString;
+    } else {
+        var parsedBody = querystring.parse(queryString);
+    }
+    
     // creating body object
     var body = {};
 
